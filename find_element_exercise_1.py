@@ -6,7 +6,7 @@ driver = webdriver.Chrome()
 driver.get("https://qa-mesto.praktikum-services.ru/")
 
 # найди заголовок
-driver...
+driver.find_element(By.CSS_SELECTOR, ".auth-form__title")
 
 # Закрой браузер
-driver...
+driver.quit()

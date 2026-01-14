@@ -4,10 +4,10 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 
 # Открой страницу тестового стенда
-driver...
+driver.get("https://qa-mesto.praktikum-services.ru/")
 
 # Проверь, что в url добавился /signin
-assert ...
+assert "/signin" in driver.current_url
 
 # Закрой браузер
-driver...
+driver.quit()

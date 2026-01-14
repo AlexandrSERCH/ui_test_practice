@@ -6,10 +6,10 @@ driver = webdriver.Chrome()
 driver.get("https://qa-mesto.praktikum-services.ru/")
 
 # Найди все элементы
-elements = driver...
+elements = driver.find_elements(By.XPATH, ".//img")
 
 # Проверь, что количество найденных элементов больше одного. Для этого используй метод len()
-...
+assert len(elements) > 1
 
 # Закрой браузер
-driver...
+driver.quit()
